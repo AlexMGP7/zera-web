@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Propuesta: ZERA en Astro vs Framer">
+  <div class="min-h-screen bg-[#030201] text-stone-100 selection:bg-amber-500/30">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,136,0,0.1),transparent_50%)] pointer-events-none"></div>
+    
+    <div class="relative mx-auto max-w-4xl px-5 py-24 sm:px-8">
+      
+      <header class="mb-16 border-b border-amber-300/10 pb-10">
+        <div class="inline-flex items-center gap-3 rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-1.5 mb-6">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+          </span>
+          <span class="text-xs font-bold uppercase tracking-widest text-amber-200">Análisis Técnico Estratégico</span>
+        </div>
+        <h1 class="font-display text-4xl font-extrabold text-white sm:text-6xl tracking-tight mb-6">
+          Por qué el código propio es el único camino para <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-500">ZERA Network</span>.
+        </h1>
+        <p class="text-xl text-stone-400 leading-relaxed">
+          Una evaluación exhaustiva entre el entorno "Low-Code" (Framer) actual y la arquitectura "Code-First" (Astro + React) que acabamos de desplegar.
+        </p>
+      </header>
+
+      <main class="space-y-12">
+        <!-- Section 1 -->
+        <section class="data-module rounded-[2rem] border border-white/10 bg-black/55 p-8 sm:p-12 backdrop-blur-xl">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+            </div>
+            <h2 class="text-2xl font-bold text-white">1. Rendimiento y SEO Técnico (Core Web Vitals)</h2>
+          </div>
+          <div class="space-y-4 text-stone-300 leading-relaxed">
+            <p><strong class="text-white">Framer:</strong> Es una plataforma basada en React que envía una cantidad significativa de JavaScript al navegador, incluso para páginas estáticas. Esto bloquea el hilo principal (Main Thread), aumentando el <em class="text-amber-200">Time to Interactive (TTI)</em> y penalizando las métricas de Google (Core Web Vitals). Además, el control del SEO técnico (Schema Markup, JSON-LD dinámico) está limitado a lo que su interfaz permite.</p>
+            <p><strong class="text-white">Astro (La nueva web):</strong> Astro utiliza la arquitectura de "Islas" (Islands Architecture) que envía <strong>cero JavaScript por defecto</strong>. La página carga instantáneamente como HTML puro, y solo hidrata con React las partes que lo necesitan. Un rendimiento perfecto se traduce directamente en un mejor posicionamiento orgánico en Google, tiempos de rebote más bajos y una experiencia de usuario premium real.</p>
+          </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="data-module rounded-[2rem] border border-white/10 bg-black/55 p-8 sm:p-12 backdrop-blur-xl">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-key"><path d="m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4"/><path d="m21 2-9.6 9.6"/><circle cx="7.5" cy="15.5" r="5.5"/></svg>
+            </div>
+            <h2 class="text-2xl font-bold text-white">2. Propiedad Absoluta (Vendor Lock-in)</h2>
+          </div>
+          <div class="space-y-4 text-stone-300 leading-relaxed">
+            <p><strong class="text-white">Framer:</strong> ZERA está alquilando su presencia digital. Si Framer sube los precios, cambia sus políticas o sufre caídas de red, ZERA se ve afectada sin poder hacer nada. Lo más crítico: <strong>no puedes exportar tu código</strong>. Estás atrapado en su ecosistema.</p>
+            <p><strong class="text-white">Astro (La nueva web):</strong> ZERA posee el 100% de la Propiedad Intelectual. Todo reside en tu repositorio de GitHub. Puedes desplegarlo en cualquier infraestructura del mundo (AWS, Cloudflare, Vercel, GitHub Pages) gratis o por centavos. Si el proyecto crece masivamente, el código te acompaña; eres dueño de cada línea de código.</p>
+          </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="data-module rounded-[2rem] border border-white/10 bg-black/55 p-8 sm:p-12 backdrop-blur-xl">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-blocks"><rect width="7" height="7" x="14" y="3" rx="1"/><path d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"/></svg>
+            </div>
+            <h2 class="text-2xl font-bold text-white">3. Integración Web3 y Escalabilidad</h2>
+          </div>
+          <div class="space-y-4 text-stone-300 leading-relaxed">
+            <p><strong class="text-white">Framer:</strong> Integrar lógica Web3 real (conexión de wallets como Phantom o MetaMask, lectura de contratos inteligentes on-chain, dashboards de staking o métricas en tiempo real) en Framer es una pesadilla llena de iframes, scripts externos y "hacks" inestables.</p>
+            <p><strong class="text-white">Astro + React (La nueva web):</strong> Es el estándar absoluto de la industria Blockchain. Puedes importar `@solana/web3.js` o `ethers.js` de forma nativa. La página no es solo "informativa", ahora es la base técnica sobre la cual ZERA puede construir su dApp oficial sin salir del mismo dominio ni de la misma arquitectura.</p>
+          </div>
+        </section>
+        
+        <!-- Conclusion -->
+        <div class="mt-16 rounded-[2rem] bg-gradient-to-br from-amber-500/20 to-orange-600/5 border border-amber-500/30 p-8 sm:p-12 text-center relative overflow-hidden">
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,136,0,0.15),transparent_60%)] pointer-events-none"></div>
+          <h3 class="text-3xl font-extrabold text-white mb-6 relative">El Veredicto</h3>
+          <p class="text-lg text-amber-100/80 mb-8 max-w-2xl mx-auto relative leading-relaxed">
+            Framer es excelente para validar una idea de marketing rápidamente. Pero para una <strong>red blockchain de infraestructura</strong>, usar una herramienta "low-code" proyecta la imagen equivocada. Mantener el control técnico, dominar el SEO a nivel de código y preparar el terreno para integraciones on-chain, exige una arquitectura como la que acabamos de construir.
+          </p>
+          <a href="/zera-web/" class="inline-flex items-center gap-2 rounded-full bg-amber-400 px-8 py-4 text-sm font-black uppercase tracking-[0.18em] text-black transition hover:bg-white hover:scale-105 duration-300 relative">
+            Ver la Web en Acción
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </main>
+      
+      <footer class="mt-24 border-t border-white/5 pt-8 text-center text-stone-500 text-sm">
+        <p>Documento Estratégico Preparado para ZERA Network Core Team.</p>
+      </footer>
+    </div>
+  </div>
+</Layout>
