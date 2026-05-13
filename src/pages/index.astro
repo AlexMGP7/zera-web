@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.jsx';
+import Metrics from '../components/Metrics.jsx';
+import GovernancePanel from '../components/GovernancePanel.jsx';
+import Security from '../components/Security.jsx';
+import Ecosystem from '../components/Ecosystem.jsx';
+import Build from '../components/Build.jsx';
+import Footer from '../components/Footer.jsx';
+---
+
+<Layout title="Sonic Logo Pop">
+  <Hero client:load />
+  <Metrics client:load />
+  <GovernancePanel client:load />
+  <Security client:load />
+  <Ecosystem client:load />
+  <Build client:load />
+  <Footer client:load />
+</Layout>
