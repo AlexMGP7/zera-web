@@ -17,7 +17,7 @@ export default function Hero() {
           <img
             alt="ZERA coin logo"
             class="h-10 w-10 rounded-full border border-amber-300/30 object-cover shadow-[0_0_24px_rgba(255,121,0,0.45)]"
-            src="/images/Orange logo png.png"
+            src="/zera-web/images/logo.png"
           />
           <span class="font-display text-sm font-bold uppercase tracking-[0.28em] text-amber-100">ZERA</span>
         </a>
@@ -95,7 +95,7 @@ export default function Hero() {
           <img
             alt="Orange ZERA coin logo"
             class="zera-logo-pop relative z-10 h-[min(54vw,390px)] w-[min(54vw,390px)] rounded-full object-cover shadow-[0_0_36px_rgba(255,118,0,0.5),0_0_120px_rgba(255,94,0,0.38)]"
-            src="/images/Orange logo png.png"
+            src="/zera-web/images/logo.png"
           />
           <div class="absolute -bottom-24 left-1/2 z-20 w-[min(86vw,280px)] -translate-x-1/2 rounded-3xl border border-amber-200/20 bg-black/70 p-5 shadow-[0_0_45px_rgba(255,123,0,0.16)] backdrop-blur-2xl md:bottom-2 md:left-auto md:right-0 md:max-w-[250px] md:translate-x-0 md:bg-black/55 lg:right-8">
             <p class="text-xs font-bold uppercase tracking-[0.22em] text-amber-200">Self-enforcing engine</p>

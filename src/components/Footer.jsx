@@ -8,7 +8,7 @@ export default function Footer() {
           <img
             alt="ZERA coin logo"
             class="h-12 w-12 rounded-full object-cover shadow-[0_0_30px_rgba(255,121,0,0.35)]"
-            src="/images/Orange logo png.png"
+            src="/zera-web/images/logo.png"
           />
           <div>
             <p class="font-display text-lg font-bold tracking-[0.04em] text-white">
